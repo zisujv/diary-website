@@ -1,0 +1,148 @@
+/**
+ * Puppy Diary Web - Mock 初始数据
+ * 提供测试用的初始日记数据
+ */
+
+import { DiaryEntry } from '../types/diary';
+
+export const mockEntries: DiaryEntry[] = [
+  {
+    id: '1716691200000-abc123',
+    date: '2026-05-15',
+    time: '14:30',
+    dayOfWeek: '星期五',
+    title: '今天去了公园散步',
+    content:
+      '天气很好，阳光温暖。在公园里看到很多小狗在玩耍，想起了小时候养的那只小狗。心情突然变得很平静，感觉生活还是很美好的。路过花坛时，看到月季花开得正艳，拍了几张照片。希望每天都能有这样的好心情。',
+    tags: ['日常', '开心', '回忆'],
+    moodScore: 85,
+    moodNote: '心情很好，感觉很放松',
+    attachments: [
+      {
+        id: 'att-001',
+        type: 'image',
+        url: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800',
+        name: '公园的月季花.jpg',
+        size: 245678,
+        mimeType: 'image/jpeg',
+      },
+    ],
+    status: 'archived',
+    aiSummary: '在公园散步，看到小狗和月季花，心情平静愉悦',
+    aiComfort: '能在日常中发现美好，是一种很珍贵的能力呢',
+    createdAt: '2026-05-15T14:30:00.000Z',
+    updatedAt: '2026-05-15T14:30:00.000Z',
+  },
+  {
+    id: '1716604800000-def456',
+    date: '2026-05-14',
+    time: '22:15',
+    dayOfWeek: '星期四',
+    title: '又是加班的一天',
+    content:
+      '项目进度有点赶，今天又加班到很晚。虽然很累，但看到代码一点点完善，还是有成就感的。同事们都很努力，大家互相鼓励。晚上点了外卖，吃了最喜欢的麻辣烫。回家的路上，夜空很美，星星很亮。',
+    tags: ['工作', '低落', '成长'],
+    moodScore: 60,
+    moodNote: '有点累，但还好',
+    attachments: [],
+    status: 'archived',
+    aiSummary: '加班很累但有成就感，同事互相支持',
+    aiComfort: '辛苦了，你的努力都会有回报的',
+    createdAt: '2026-05-14T22:15:00.000Z',
+    updatedAt: '2026-05-14T22:15:00.000Z',
+  },
+  {
+    id: '1716518400000-ghi789',
+    date: '2026-05-13',
+    time: '19:00',
+    dayOfWeek: '星期三',
+    title: '和朋友聚餐',
+    content:
+      '好久没见的朋友约了聚餐，去了一家新开的日料店。大家聊了很多，从工作到生活，从过去到未来。发现每个人都在努力生活，都有自己的烦恼和快乐。吃完饭还去唱了歌，很久没这么放松了。',
+    tags: ['朋友', '社交', '开心'],
+    moodScore: 90,
+    moodNote: '很开心，很放松',
+    attachments: [
+      {
+        id: 'att-002',
+        type: 'image',
+        url: 'https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=800',
+        name: '日料店合影.jpg',
+        size: 312456,
+        mimeType: 'image/jpeg',
+      },
+    ],
+    status: 'archived',
+    aiSummary: '和朋友聚餐唱歌，聊了很多，很放松',
+    aiComfort: '有朋友陪伴的时光总是特别珍贵',
+    createdAt: '2026-05-13T19:00:00.000Z',
+    updatedAt: '2026-05-13T19:00:00.000Z',
+  },
+  {
+    id: '1716432000000-jkl012',
+    date: '2026-05-12',
+    time: '23:30',
+    dayOfWeek: '星期二',
+    title: '有点焦虑',
+    content:
+      '最近总是睡不好，脑子里想的事情太多了。工作上的压力，家里的事情，还有对未来的迷茫。有时候觉得自己很无力，不知道该怎么办。试着深呼吸，告诉自己一切都会好起来的。',
+    tags: ['情绪', '焦虑', '心灵'],
+    moodScore: 40,
+    moodNote: '有点焦虑，睡不好',
+    attachments: [],
+    status: 'inbox',
+    createdAt: '2026-05-12T23:30:00.000Z',
+    updatedAt: '2026-05-12T23:30:00.000Z',
+  },
+  {
+    id: '1716345600000-mno345',
+    date: '2026-05-11',
+    time: '16:45',
+    dayOfWeek: '星期一',
+    title: '周末去了趟海边',
+    content:
+      '周末和家人一起去了海边，看到大海心情就好了很多。海风吹在脸上，咸咸的味道。孩子们在沙滩上玩得很开心，堆了好多沙堡。我和爸妈坐在一起聊天，感觉时间过得很慢，很珍贵。拍了很多照片，想把这些美好的瞬间都记录下来。',
+    tags: ['家人', '旅行', '开心', '回忆'],
+    moodScore: 95,
+    moodNote: '非常开心，很满足',
+    attachments: [
+      {
+        id: 'att-003',
+        type: 'image',
+        url: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800',
+        name: '海边日落.jpg',
+        size: 456789,
+        mimeType: 'image/jpeg',
+      },
+      {
+        id: 'att-004',
+        type: 'image',
+        url: 'https://images.unsplash.com/photo-1519046904884-53103b34b206?w=800',
+        name: '沙滩上的脚印.jpg',
+        size: 389012,
+        mimeType: 'image/jpeg',
+      },
+    ],
+    status: 'archived',
+    aiSummary: '和家人去海边，孩子们玩沙堡，和父母聊天，很珍贵',
+    aiComfort: '和家人在一起的时光，是最温暖的回忆',
+    createdAt: '2026-05-11T16:45:00.000Z',
+    updatedAt: '2026-05-11T16:45:00.000Z',
+  },
+  {
+    id: '1716259200000-pqr678',
+    date: '2026-05-10',
+    time: '21:00',
+    dayOfWeek: '星期日',
+    title: '读完了一本书',
+    content:
+      '今天终于读完了《活着》，心情很复杂。书里的故事让我想了很多，关于生命，关于苦难，关于希望。有时候觉得自己的烦恼其实都不算什么，但又觉得每个人的痛苦都是真实的。想记录一下读后感，但又不知道从何说起。',
+    tags: ['心灵', '反思', '灵感'],
+    moodScore: 70,
+    moodNote: '心情复杂，有所感悟',
+    attachments: [],
+    status: 'inbox',
+    createdAt: '2026-05-10T21:00:00.000Z',
+    updatedAt: '2026-05-10T21:00:00.000Z',
+  },
+];
